@@ -1,0 +1,5 @@
+name        math    chinese     english     biology
+Joshua      85      93          66          83
+Gordon      77      69          96          74
+Anderson    65      85          88          95
+James       100     89          94          100
