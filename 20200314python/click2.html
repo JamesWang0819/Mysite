@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Interactive Page</h1>
+
+    <p>Click the button below, and nothing happens</p>
+
+    <button onclick="sayHello();">Sucker</button>
+    <button onclick="printRandom();">Print Random Junk</button>
+    <script>
+      function sayHello() {
+        alert('Hello, trash');
+      }
+
+      var count = 0;
+      function printRandom() {
+        count++;
+        console.log('Garbage: ', count, Math.random());
+      }
+    </script>
+  </body>
+</html>
