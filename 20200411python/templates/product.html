@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HIGH NOON STORE - {{product.name}}</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1><a href="/">HIGH NOON STORE</a> - {{product.name}}</h1>
+    <ul>
+      <li>ID: {{product.id}}</li>
+      <li>price: USD$ {{product.price}}</li>
+      <li>FYI: {{product.desc}}</li>
+      <li><a href="/product/{{product.id}}/edit">Edit</a></li>
+    </ul>
+    <img src="{{product.src}}" style='width: 500px;'/>
+  </body>
+</html>
