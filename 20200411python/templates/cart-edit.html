@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HIGH NOON STORE - {{product.name}} - Edit</title>
+    <title>HIGH NOON STORE</title>
     <meta charset="utf-8">
   </head>
   <body>
     <h1><a href="/">HIGH NOON STORE</a>
-        - <a href="/product/{{product.id}}">{{product.name}}</a>
+        - <a href="/cart/edit">My Cart</a>
     </h1>
 
-    <form action="/product/{{product.id}}/edit" method="post">
+    <form action="/cart/edit" method="post">
         <div>
-          <label for="name">Name:</label>
-          <input id="name" type="text" name="name" value="{{product.name}}">
-          {% if errors['name'] %}
-          <div>{{ errors['name'] }}</div>
-          {% endif %}
+          <label for="SUCKA">Dig it. SUCKA!!!   Amount:</label>
+          <input id="SUCKA" type="SUCKA" name="SUCKA" value="{{cart[0].get['num']}}">
         </div>
         <div>
-          <label for="price">Price:</label>
-          <input id="price" type="text" name="price" value="{{product.price}}">
-          {% if errors['price'] %}
-          <div>{{ errors['price'] }}</div>
-          {% endif %}
-        </div>
-        <div>
-            <label for="desc">Description:</label>
-            <input id="desc" type="text" name="desc" value="{{product.desc}}">
-        </div>
-        <div>
-            <label for="image">Image:</label>
-            <input id="image" type="text" name="image" value="{{product.src}}">
+          <label for="Pina">Pina Colada   Amount:</label>
+          <input id="Pina" type="Pina" name="Pina" value="{{cart[1].get['num']}}">
         </div>
         <p><button type="submit">Submit</button></p>
     </form>

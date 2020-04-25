@@ -12,7 +12,6 @@ def createProducts():
     )
     """
     c.execute(sql)
-createProducts()
 
 def insertProducts():
     c = conn.cursor()

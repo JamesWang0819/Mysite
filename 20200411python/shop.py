@@ -102,3 +102,17 @@ def edit(id):
 
     return render_template('product-edit.html', product=prod, 
         errors=errors)
+
+
+@app.route("/cart/edit", methods = ['GET', 'POST'])
+def cartedit():
+    if request.method == 'POST':
+        SUCKA = int(request.form['SUCKA'])
+        Pina = int(request.form['Pina'])        
+        cart[0]['num'] = SUCKA
+        cart[1]['num'] = Pina
+        return redirect('/')
+
+    return render_template("cart-edit.html", cart = cart)
+
+
