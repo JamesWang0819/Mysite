@@ -18,7 +18,7 @@ champs = {
       "id" : "ch3",
       "name": "Yasuo", 
       "intro": "An Ionian of deep resolve, Yasuo is an agile swordsman who wields the air itself against his enemies. As a proud young man, he was falsely accused of murdering his master—unable to prove his innocence, he was forced to slay his own brother in self defense.",
-      "src": "https://i.pinimg.com/originals/aa/9d/35/aa9d35334f6d9f5c6416d1c4e869bd3a.jpg" },
+      "src": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg" },
   "ch4": { 
       "id" : "ch4",
       "name": "Zed", 
@@ -41,7 +41,7 @@ champs = {
 def school():
     return render_template('school.html', champs = champs)
 
-@app.route('/champ/<sid>')
-def champ(sid):
-    champ = champ[sid]
-    return render_template('champ.html', champ = champ)
+@app.route('/champ/<chid>')
+def champ(chid):
+    abis = champs[chid]
+    return render_template('abi.html', abi = abis)
